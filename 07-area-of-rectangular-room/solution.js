@@ -27,22 +27,23 @@ function areaCalculator() {
 
         calculateAreaInMeters();
     };
-}
 
-function calculateAreaInMeters() {
-    console.log(`You entered dimensions of ${length} by ${width} ${userChoice}.`)
-    var squareMeters = length * width;
-    console.log(`The area is ${squareMeters} m²`);
-    console.log('The formula for this conversion is m² = ft² × 0.09290304');
-}
+    function calculateAreaInMeters() {
+        console.log(`You entered dimensions of ${length} by ${width} ${userChoice}.`)
+        var squareMeters = length * width;
+        console.log(`The area is ${squareMeters} m²`);
+        console.log('The formula for this conversion is m² = ft² × 0.09290304');
+    }
 
-function calculateAreaInFeet() {
-    console.log(`You entered dimensions of ${length} by ${width} ${userChoice}.`)
-    var squareFeet = length * width;
-    var squareMeter = (squareFeet * 0.09290304).toFixed(3);
-    console.log(`The area is ${squareFeet} ft²`)
-    console.log(`Area in meters = ${squareFeet} * 0.09290304 = ${squareMeter} m²`);
-    console.log('The formula for this conversion is m² = ft² × 0.09290304');
+    function calculateAreaInFeet() {
+        console.log(`You entered dimensions of ${length} by ${width} ${userChoice}.`)
+        var squareFeet = length * width;
+        var squareMeter = (squareFeet * 0.09290304).toFixed(3);
+        console.log(`The area is ${squareFeet} ft²`)
+        console.log(`Area in meters = ${squareFeet} * 0.09290304 = ${squareMeter} m²`);
+        console.log('The formula for this conversion is m² = ft² × 0.09290304');
+    }
 }
 
 areaCalculator();
+
